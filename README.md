@@ -1,21 +1,22 @@
 # AllTax Technical Test - Gabriel Henrique Pereira Soares
 
-Desenvolvido com Angular 16, Typescript, SCSS.
+Developed with Angular 16, Typescript, SCSS.
 
-Bibliotecas usadas:
+Libraries used:
 - [ngx-charts](https://github.com/swimlane/ngx-charts)
 
-## Dependências
+## Dependencies
 
-- Node 16.
+- Node 18;
+- Angular 16.
 
-## Execução
+## Execution
 
-1. Clone esse repositório com `git clone https://github.com/ghsoares/alltax-technical-test.git`;
-2. Inicialize as dependências do projeto com `npm install`;
-3. Rode o projeto com `ng serve`;
-4. Visualize o projeto pelo endereço `localhost:4200` no navegador.
+1. Clone this repository with `git clone https://github.com/ghsoares/alltax-technical-test.git`;
+2. Initialize the project dependencies with `npm install`;
+3. Run angular server with `ng serve`;
+4. View the project in the address `localhost:4200` in the web browser.
 
 ## Live view
 
-Esse projeto está hospedado pelo Github Pages que pode ser visto [aqui](https://ghsoares.github.io/alltax-technical-test/).
+This project is hosted in Github Pages which can be viewed [here](https://ghsoares.github.io/alltax-technical-test/).
