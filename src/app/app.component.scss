@@ -1,0 +1,27 @@
+:host {
+	display: flex;
+	flex-direction: column;
+	padding: 8px;
+	#report-loading-info, #chart-null-info {
+		display: flex;
+		font-size: 24px;
+		font-weight: 700;
+		margin: 0;
+		flex: 1;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	#options {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		gap: 16px;
+	}
+	#sales-graph {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+	}
+}

@@ -1,0 +1,214 @@
+{
+	"categories": {
+		"Roupa": {
+			"products": {
+				"Camiseta": {
+					"brands": {
+						"Camiseta 1": [
+							["Janeiro", 3822],
+							["Fevereiro", 4422],
+							["Março", 2932],
+							["Abril", 2707]
+						],
+						"Camiseta 2": [
+							["Janeiro", 670],
+							["Fevereiro", 4600],
+							["Março", 3902],
+							["Abril", 787]
+						],
+						"Camiseta 3": [
+							["Janeiro", 533],
+							["Fevereiro", 4485],
+							["Março", 3907],
+							["Abril", 1599]
+						]
+					}
+				},
+				"Calça": {
+					"brands": {
+						"Calça 1": [
+							["Janeiro", 4180],
+							["Fevereiro", 2727],
+							["Março", 4917],
+							["Abril", 2680]
+						],
+						"Calça 2": [
+							["Janeiro", 4844],
+							["Fevereiro", 4354],
+							["Março", 679],
+							["Abril", 658]
+						],
+						"Calça 3": [
+							["Janeiro", 4902],
+							["Fevereiro", 3114],
+							["Março", 3031],
+							["Abril", 1090]
+						]
+					}
+				},
+				"Chapeu": {
+					"brands": {
+						"Chapeu 1": [
+							["Janeiro", 4705],
+							["Fevereiro", 2440],
+							["Março", 1841],
+							["Abril", 673]
+						],
+						"Chapeu 2": [
+							["Janeiro", 3995],
+							["Fevereiro", 1807],
+							["Março", 3769],
+							["Abril", 2473]
+						],
+						"Chapeu 3": [
+							["Janeiro", 4524],
+							["Fevereiro", 1279],
+							["Março", 2320],
+							["Abril", 1337]
+						]
+					}
+				}
+			}
+		},
+		"Comida": {
+			"products": {
+				"Arroz": {
+					"brands": {
+						"Arroz 1": [
+							["Janeiro", 914],
+							["Fevereiro", 2949],
+							["Março", 4509],
+							["Abril", 983]
+						],
+						"Arroz 2": [
+							["Janeiro", 3117],
+							["Fevereiro", 4075],
+							["Março", 4511],
+							["Abril", 2362]
+						],
+						"Arroz 3": [
+							["Janeiro", 3977],
+							["Fevereiro", 1610],
+							["Março", 2468],
+							["Abril", 3026]
+						]
+					}
+				},
+				"Feijão": {
+					"brands": {
+						"Feijão 1": [
+							["Janeiro", 2191],
+							["Fevereiro", 1255],
+							["Março", 4338],
+							["Abril", 3001]
+						],
+						"Feijão 2": [
+							["Janeiro", 3261],
+							["Fevereiro", 1249],
+							["Março", 2694],
+							["Abril", 738]
+						],
+						"Feijão 3": [
+							["Janeiro", 2850],
+							["Fevereiro", 4866],
+							["Março", 3138],
+							["Abril", 3552]
+						]
+					}
+				},
+				"Carne": {
+					"brands": {
+						"Carne 1": [
+							["Janeiro", 1897],
+							["Fevereiro", 1379],
+							["Março", 1447],
+							["Abril", 4451]
+						],
+						"Carne 2": [
+							["Janeiro", 1491],
+							["Fevereiro", 4477],
+							["Março", 3910],
+							["Abril", 1410]
+						],
+						"Carne 3": [
+							["Janeiro", 1848],
+							["Fevereiro", 1608],
+							["Março", 3595],
+							["Abril", 4271]
+						]
+					}
+				}
+			}
+		},
+		"Eletrônico": {
+			"products": {
+				"Celular": {
+					"brands": {
+						"Celular 1": [
+							["Janeiro", 3707],
+							["Fevereiro", 4596],
+							["Março", 1081],
+							["Abril", 2750]
+						],
+						"Celular 2": [
+							["Janeiro", 1850],
+							["Fevereiro", 2552],
+							["Março", 944],
+							["Abril", 2269]
+						],
+						"Celular 3": [
+							["Janeiro", 3316],
+							["Fevereiro", 3861],
+							["Março", 4947],
+							["Abril", 4410]
+						]
+					}
+				},
+				"Computador": {
+					"brands": {
+						"Computador 1": [
+							["Janeiro", 3310],
+							["Fevereiro", 4469],
+							["Março", 4716],
+							["Abril", 3835]
+						],
+						"Computador 2": [
+							["Janeiro", 4974],
+							["Fevereiro", 2659],
+							["Março", 2323],
+							["Abril", 762]
+						],
+						"Computador 3": [
+							["Janeiro", 2401],
+							["Fevereiro", 2299],
+							["Março", 4071],
+							["Abril", 2968]
+						]
+					}
+				},
+				"Videogame": {
+					"brands": {
+						"Videogame 1": [
+							["Janeiro", 4088],
+							["Fevereiro", 858],
+							["Março", 4386],
+							["Abril", 1303]
+						],
+						"Videogame 2": [
+							["Janeiro", 633],
+							["Fevereiro", 1912],
+							["Março", 1840],
+							["Abril", 617]
+						],
+						"Videogame 3": [
+							["Janeiro", 4705],
+							["Fevereiro", 4927],
+							["Março", 4489],
+							["Abril", 1344]
+						]
+					}
+				}
+			}
+		}
+	}
+}

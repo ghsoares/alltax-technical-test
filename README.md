@@ -1,27 +1,21 @@
-# AlltaxTechnicalTest
+# AllTax Technical Test - Gabriel Henrique Pereira Soares
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+Desenvolvido com Angular 16, Typescript, SCSS.
 
-## Development server
+Bibliotecas usadas:
+- [ngx-charts](https://github.com/swimlane/ngx-charts)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Dependências
 
-## Code scaffolding
+- Node 16.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Execução
 
-## Build
+1. Clone esse repositório com `git clone https://github.com/ghsoares/alltax-technical-test.git`;
+2. Inicialize as dependências do projeto com `npm install`;
+3. Rode o projeto com `ng serve`;
+4. Visualize o projeto pelo endereço `localhost:4200` no navegador.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Live view
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Esse projeto está hospedado pelo Github Pages que pode ser visto [aqui](https://ghsoares.github.io/alltax-technical-test/).

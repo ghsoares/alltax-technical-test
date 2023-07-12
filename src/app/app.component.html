@@ -1,31 +1,86 @@
-<header id="options">
-  <div class="input-field">
-    <label for="category">Categoria: </label>
-    <select name="category" id="category">
-      <option value="" selected disabled hidden>Selecione uma opção</option>
-    </select>
-  </div>
-  <div class="input-field">
-    <label for="product">Produto: </label>
-    <select name="product" id="product">
-      <option value="" selected disabled hidden>Selecione uma opção</option>
-    </select>
-  </div>
-  <div class="input-field">
-    <label for="brand">Marca: </label>
-    <select name="brand" id="brand">
-      <option value="" selected disabled hidden>Selecione uma opção</option>
-    </select>
-  </div>
-</header>
-<article id="sales-graph" class="vertical">
-  <div class="horizontal">
-    <div class="vertical" id="graph-y">
-
+<p *ngIf="loadingReport" id="report-loading-info">Carregando relatório de vendas...</p>
+<ng-container *ngIf="!loadingReport">
+  <header id="options">
+    <div class="input-field">
+      <label for="category">Categoria: </label>
+      <select
+        name="category"
+        id="category"
+        #category
+        [(ngModel)]="selectedCategory"
+        (change)="updateChartData()"
+      >
+        <option
+          [ngValue]="-1"
+          selected
+          disabled
+        >Selecione uma opção</option>
+        <option
+          *ngFor="let category of reportData; let i = index"
+          [ngValue]="i"
+        >{{category[0]}}</option>
+      </select>
     </div>
-    <div id="graph-columns">
-
+    <div class="input-field">
+      <label for="product">Produto: </label>
+      <select
+        name="product"
+        id="product"
+        #product
+        [(ngModel)]="selectedProduct"
+        (change)="updateChartData()"
+      >
+        <option
+        [ngValue]="-1"
+          selected
+          disabled
+        >Selecione uma opção</option>
+        <option
+          *ngFor="let product of getCategoryData(); let i = index"
+          [ngValue]="i"
+        >{{product[0]}}</option>
+      </select>
     </div>
-  </div>
-  <div class="horizontal" id="graph-x"></div>
-</article>
+    <div class="input-field">
+      <label for="brand">Marca: </label>
+      <select
+        name="brand"
+        id="brand"
+        #brand
+        [(ngModel)]="selectedBrand"
+        (change)="updateChartData()"
+      >
+        <option
+          [ngValue]="-1"
+          selected
+          disabled
+        >Selecione uma opção</option>
+        <option
+          *ngFor="let brand of getProductData(); let i = index"
+          [ngValue]="i"
+        >{{brand[0]}}</option>
+      </select>
+    </div>
+  </header>
+  <article
+    id="sales-graph"
+    class="vertical"
+  >
+    <p *ngIf="chartData == null" id="chart-null-info">
+      Selecione uma categoria, produto e marca
+    </p>
+    <!-- [xAxisLabel]="'Mês'"
+      [yAxisLabel]="'Vendas'" 
+    [showXAxisLabel]="true"
+      [showYAxisLabel]="true"-->
+    <ngx-charts-line-chart
+      *ngIf="chartData != null"
+      [results]="chartData"
+      
+      
+      [xAxis]="true"
+      [yAxis]="true"
+      [gradient]="true"
+    ></ngx-charts-line-chart>
+  </article>
+</ng-container>
