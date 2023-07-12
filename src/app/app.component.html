@@ -85,7 +85,8 @@
     >
       <ngx-charts-line-chart
         [results]="chartData"
-        [legendTitle]="'Test'"
+        [yScaleMin]="chartMin"
+        [yScaleMax]="chartMax"
         [xAxis]="true"
         [yAxis]="true"
         [gradient]="true"

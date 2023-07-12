@@ -19,6 +19,8 @@ export class AppComponent implements OnInit {
   selectedBrand: number = -1;
 
   chartData: ChartData = null;
+  chartMin: number = -1;
+  chartMax: number = -1;
 
   ngOnInit(): void {
     this.loadReport("assets/data.json");
@@ -70,13 +72,20 @@ export class AppComponent implements OnInit {
       this.selectedBrand = -1;
       this.chartData = null;
     }
+    this.chartMin = Number.MAX_VALUE;
+    this.chartMax = Number.MIN_VALUE;
     this.chartData = [{
       name: "Vendas",
       series: data.map(v => {
+        this.chartMin = Math.min(this.chartMin, v[1]);
+        this.chartMax = Math.max(this.chartMax, v[1]);
         return {
           name: v[0], value: v[1]
         }
       })
     }];
+    let span = this.chartMax - this.chartMin;
+    this.chartMin -= Math.floor(span * 0.2);
+    this.chartMax += Math.ceil(span * 0.2);
   }
 }
