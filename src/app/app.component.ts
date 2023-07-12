@@ -1,4 +1,4 @@
-import { ElementRef } from '@angular/core';
+import { ElementRef, OnInit } from '@angular/core';
 import { ViewChild } from '@angular/core';
 import { Component } from '@angular/core';
 import { BrandData, CategoryData, ChartData, loadReportFromJson, ProductData, ReportData } from 'src/model/report-data';
@@ -8,7 +8,7 @@ import { BrandData, CategoryData, ChartData, loadReportFromJson, ProductData, Re
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'Sale report';
 
   loadingReport: boolean = false;
@@ -20,14 +20,17 @@ export class AppComponent {
 
   chartData: ChartData = null;
 
-  constructor() {
+  ngOnInit(): void {
+    this.loadReport("assets/data.json");
+  }
+
+  loadReport(path: string): void {
     this.loadingReport = true;
     
-    fetch("assets/data.json")
+    fetch(path)
       .then(r => r.json())
       .then(d => {
         this.reportData = loadReportFromJson(d);
-        console.log(this.reportData.at(0)?.at(1)?.at(0)?.at(1));
         this.loadingReport = false;
       })
       .catch(e => console.error(e));

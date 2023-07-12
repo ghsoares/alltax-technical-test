@@ -4,8 +4,6 @@
 	padding: 8px;
 	#report-loading-info, #chart-null-info {
 		display: flex;
-		font-size: 24px;
-		font-weight: 700;
 		margin: 0;
 		flex: 1;
 		justify-content: center;
@@ -18,10 +16,31 @@
 		justify-content: space-around;
 		flex-wrap: wrap;
 		gap: 16px;
+		.input-field {
+			gap: 8px;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+		}
+	}
+	@media (max-width: 720px) {
+		#options {
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: stretch;
+			.input-field {
+				justify-content: space-between;
+			}
+		}
 	}
 	#sales-graph {
 		display: flex;
 		flex-direction: column;
 		flex: 1;
+		min-height: 0;
+		#chart-container {
+			flex: 1;
+			min-height: 0;
+		}
 	}
 }

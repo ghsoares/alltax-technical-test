@@ -1,4 +1,7 @@
-<p *ngIf="loadingReport" id="report-loading-info">Carregando relatório de vendas...</p>
+<h2
+  *ngIf="loadingReport"
+  id="report-loading-info"
+>Carregando relatório de vendas...</h2>
 <ng-container *ngIf="!loadingReport">
   <header id="options">
     <div class="input-field">
@@ -31,7 +34,7 @@
         (change)="updateChartData()"
       >
         <option
-        [ngValue]="-1"
+          [ngValue]="-1"
           selected
           disabled
         >Selecione uma opção</option>
@@ -66,21 +69,27 @@
     id="sales-graph"
     class="vertical"
   >
-    <p *ngIf="chartData == null" id="chart-null-info">
+    <h3
+      *ngIf="chartData == null"
+      id="chart-null-info"
+    >
       Selecione uma categoria, produto e marca
-    </p>
-    <!-- [xAxisLabel]="'Mês'"
-      [yAxisLabel]="'Vendas'" 
-    [showXAxisLabel]="true"
-      [showYAxisLabel]="true"-->
-    <ngx-charts-line-chart
+    </h3>
+    <h3
       *ngIf="chartData != null"
-      [results]="chartData"
-      
-      
-      [xAxis]="true"
-      [yAxis]="true"
-      [gradient]="true"
-    ></ngx-charts-line-chart>
+      id="chart-title"
+    >Vendas por mês</h3>
+    <div
+      *ngIf="chartData != null"
+      id="chart-container"
+    >
+      <ngx-charts-line-chart
+        [results]="chartData"
+        [legendTitle]="'Test'"
+        [xAxis]="true"
+        [yAxis]="true"
+        [gradient]="true"
+      ></ngx-charts-line-chart>
+    </div>
   </article>
 </ng-container>
